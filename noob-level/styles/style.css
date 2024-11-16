@@ -11,6 +11,7 @@
     font-style: normal;
     /* right to left items */
     direction: rtl;
+    list-style: none;
 }
 
 /* MARK: HEADER TOP
@@ -86,6 +87,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0.5rem 0;
+    position: relative;
 }
 
 .main-logo-bank {
@@ -100,13 +102,13 @@
     align-items: flex-end;
 }
 
-.menu-header-bottom ul {
+.menu-header-bottom-ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-.menu-header-bottom ul li a {
+.menu-header-bottom-ul li a {
     color: #333;
 }
 
@@ -132,6 +134,99 @@
     padding: 0.3rem 0.4rem;
     border-radius: 10px;
     color: white;
+}
+
+/* MARK: Electronic Banking Dropdown */
+/* Electronic Banking Dropdown */
+
+.dropdown-elctronic-banking {
+    /* display: none; */
+    z-index: 10;
+    position: absolute;
+    margin-top: 0.8rem;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+}
+
+.dropdown-menu-elctronic-banking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem 1.5rem;
+}
+
+.dropdown-menu-c1-elctronic-banking ul, .dropdown-menu-c2-elctronic-banking ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dropdown-menu-sub-elctronic-banking li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* MARK: Banking Services */
+/* Banking Services */
+
+.dropdown-banking-services {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    margin-top: 0.8rem;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+}
+
+.dropdown-menu-banking-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem 1.5rem;
+}
+
+.dropdown-menu-c1-banking-services ul, .dropdown-menu-c2-banking-services ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dropdown-menu-sub-banking-services li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* MARK: International Services */
+/* International Services */
+
+.dropdown-international-services {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    margin-top: 0.8rem;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+}
+
+.dropdown-menu-international-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem 1.5rem;
+}
+
+.dropdown-menu-c1-international-services ul, .dropdown-menu-c2-international-services ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dropdown-menu-sub-international-services li {
+    display: flex;
+    gap: 0.5rem;
 }
 
 /* MARK: SECTION 1
@@ -207,7 +302,8 @@
 /* ---------- SECTION 2 ---------- */
 
 .back-section2 {
-    background-color: rgb(193, 199, 173);
+    background-image: url(../assets/imgs/background-fixed.jpg);
+    background-attachment: fixed;
 }
 
 .section2 {
@@ -371,6 +467,10 @@
 /* MARK: SECTION 4
 /* ---------- SECTION 4 ---------- */
 
+.back-section4 {
+    background-image: url(../assets/imgs/background-bottom.png);
+}
+
 .section4 {
     max-width: 70vw;
     margin: auto;
@@ -441,7 +541,6 @@
     gap: 0.5rem;
 }
 
-
 /* MARK: SECTION 6
 /* ---------- SECTION 6 ---------- */
 
@@ -449,7 +548,7 @@
     background-color: #FCFAF3;
 }
 
-.section6{
+.section6 {
     max-width: 70vw;
     margin: auto;
     padding-bottom: 2rem;
@@ -486,8 +585,8 @@
     width: 11rem;
 }
 
-/* MARK: SECTION 7
-/* ---------- SECTION 7 ---------- */
+/* MARK: FOOTER
+/* ---------- FOOTER ---------- */
 
 .section7 {
     background-color: rgb(193, 199, 173);
@@ -495,10 +594,6 @@
     justify-content: center;
     padding: 1rem;
 }
-
-
-
-
 
 /* MARK: SHAPES
 /* ---------- SHAPES ---------- */
