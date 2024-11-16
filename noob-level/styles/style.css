@@ -17,6 +17,12 @@
 /* MARK: HEADER TOP
 /* ---------- HEADER TOP ---------- */
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+
 .header-top {
     background-color: rgb(193, 199, 173);
 }
@@ -124,6 +130,7 @@
 .fast-access {
     display: flex;
     column-gap: 0.5rem;
+    color: #007773;
 }
 
 .HiBank {
@@ -140,7 +147,7 @@
 /* Electronic Banking Dropdown */
 
 .dropdown-elctronic-banking {
-    /* display: none; */
+    display: none;
     z-index: 10;
     position: absolute;
     margin-top: 0.8rem;
@@ -156,7 +163,8 @@
     padding: 2.5rem 1.5rem;
 }
 
-.dropdown-menu-c1-elctronic-banking ul, .dropdown-menu-c2-elctronic-banking ul {
+.dropdown-menu-c1-elctronic-banking ul,
+.dropdown-menu-c2-elctronic-banking ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -187,7 +195,8 @@
     padding: 2.5rem 1.5rem;
 }
 
-.dropdown-menu-c1-banking-services ul, .dropdown-menu-c2-banking-services ul {
+.dropdown-menu-c1-banking-services ul,
+.dropdown-menu-c2-banking-services ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -218,7 +227,8 @@
     padding: 2.5rem 1.5rem;
 }
 
-.dropdown-menu-c1-international-services ul, .dropdown-menu-c2-international-services ul {
+.dropdown-menu-c1-international-services ul,
+.dropdown-menu-c2-international-services ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -257,6 +267,18 @@
     align-items: center;
 }
 
+.section1-topic1-title {
+    display: flex;
+    color: #007773;
+    padding: 0.5rem 1.5rem;
+    padding-top: 2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.section1-topic1-title:hover {
+    color: #0ed068;
+}
+
 .section1-topic1 p {
     grid-row: 1;
     grid-column: 1;
@@ -264,13 +286,29 @@
     padding: 0.5rem 1.5rem;
 }
 
-.section1-topic1 a {
+.section1-topic1-more {
     grid-row: 1;
     grid-column: 1;
     display: flex;
     padding: 0.5rem 1.5rem;
     color: #007773;
     font-size: small;
+    transition: color 0.2s ease-in-out;
+}
+
+.section1-topic1-more:hover {
+    color: #333;
+}
+
+.section1-topic2-title {
+    color: #007773;
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.section1-topic2-title:hover {
+    color: #0ed068;
 }
 
 .section1-topic2 p {
@@ -280,13 +318,18 @@
     padding: 0.5rem 1.5rem;
 }
 
-.section1-topic2 a {
+.section1-topic2-more {
     grid-row: 1;
     grid-column: 1;
     display: flex;
     padding: 0.5rem 1.5rem;
     color: #007773;
     font-size: small;
+    transition: color 0.2s ease-in-out;
+}
+
+.section1-topic2-more:hover {
+    color: #333;
 }
 
 .section1-slider {
@@ -308,13 +351,16 @@
 
 .section2 {
     max-width: 70vw;
+    max-height: 8vw;
     margin: auto;
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 0 3rem 0;
 }
 
 .grid-section2-items {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    height: 10vw;
+    align-items: center;
 }
 
 .section2-item1 {
@@ -363,8 +409,9 @@
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+    transition: all 0.3s 0.08s ease-in-out;
 }
-
+    
 /* MARK: SECTION 3
 /* ---------- SECTION 3 ---------- */
 
@@ -615,4 +662,46 @@
     transform: rotate(45deg);
     border-radius: 10px;
     justify-self: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.diamond::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 110px;
+    height: 110px;
+    border: 0.3rem solid #FCFAF3;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.diamond:hover::before {
+    transform: scale(1.1)
+}
+
+.section2-item1:hover .section2-items-texts {
+    transform: translateY(0.5rem);
+}
+.section2-item2:hover .section2-items-texts {
+    transform: translateY(0.5rem);
+}
+.section2-item3:hover .section2-items-texts {
+    transform: translateY(0.5rem);
+}
+.section2-item4:hover .section2-items-texts {
+    transform: translateY(0.5rem);
+}
+.section2-item5:hover .section2-items-texts {
+    transform: translateY(0.5rem);
+}
+.section2-item6:hover .section2-items-texts {
+    transform: translateY(0.5rem);
 }
