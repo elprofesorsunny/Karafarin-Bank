@@ -14,14 +14,14 @@
     list-style: none;
 }
 
-/* MARK: HEADER TOP
-/* ---------- HEADER TOP ---------- */
-
 .header {
     position: sticky;
     top: 0;
-    z-index: 100000;
+    z-index: 15;
 }
+
+/* MARK: HEADER TOP
+/* ---------- HEADER TOP ---------- */
 
 .header-top {
     background-color: rgb(193, 199, 173);
@@ -92,8 +92,8 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0.5rem 0;
     position: relative;
+    padding: 0.5rem 0;
 }
 
 .main-logo-bank {
@@ -126,8 +126,28 @@
     vertical-align: middle;
 }
 
+.menu-header-bottom-ul li {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-header-bottom-ul li a span {
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    border-bottom: 0.15rem solid #0ed068;
+    transform: translateX(110%);
+    transition: all 0.3s ease-in-out;
+    margin: -0rem 0;
+}
+
+.menu-header-bottom-ul li a:hover span {
+    transform: translateX(0%);
+}
+
 .menu-header-bottom-ul li a {
     color: #333;
+    margin: 0.5rem 0;
 }
 
 .fast-access-and-HiBank {
@@ -662,7 +682,7 @@
     height: 10px;
     border: red solid 2px;
     display: flex;
-    z-index: 1000;
+    z-index: 12;
     align-self: center;
 }
 
