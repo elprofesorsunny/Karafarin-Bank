@@ -371,6 +371,22 @@
     border-radius: 20px;
     grid-row: 1;
     grid-column: 2 / span 4;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
 }
 
 /* MARK: SECTION 2
