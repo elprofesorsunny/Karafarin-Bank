@@ -158,6 +158,48 @@
     display: flex;
     column-gap: 0.5rem;
     color: #007773;
+    position: relative;
+}
+
+.dropdown-fast-access {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    margin-top: 14.9rem;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 6px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.dropdown-fast-access.active {
+    display: block;
+    width: 30vw;
+    height: auto;
+}
+
+.dropdown-menu-fast-access ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 1rem;
+    gap: 2rem;
+    visibility: visible;
+}
+
+.dropdown-menu-fast-access ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    gap: 0.8rem;
+}
+
+.dropdown-menu-fast-access ul li a {
+    color: #333;
 }
 
 .HiBank {
