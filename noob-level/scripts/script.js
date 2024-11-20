@@ -30,6 +30,44 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    const fastAccessItem = document.querySelector('.fast-access');
+    const fastAccessDropdown = document.querySelector('.dropdown-fast-access');
+
+    fastAccessItem.addEventListener('click', (event) => {
+        event.preventDefault(); 
+
+        if (fastAccessDropdown.classList.contains('active')) {
+            
+            fastAccessDropdown.style.height = '0';
+            fastAccessDropdown.style.width = '0';
+            setTimeout(() => {
+                fastAccessDropdown.classList.remove('active');
+                fastAccessDropdown.style.display = 'none';
+            }, 300); 
+        } else {
+            
+            fastAccessDropdown.style.display = 'block';
+            fastAccessDropdown.classList.add('active');
+            fastAccessDropdown.style.height = `${fastAccessDropdown.scrollHeight}px`;
+            fastAccessDropdown.style.width = '30vw'; 
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (
+            !fastAccessItem.contains(event.target) &&
+            !fastAccessDropdown.contains(event.target)
+        ) {
+            
+            fastAccessDropdown.style.height = '0';
+            fastAccessDropdown.style.width = '0';
+            setTimeout(() => {
+                fastAccessDropdown.classList.remove('active');
+                fastAccessDropdown.style.display = 'none';
+            }, 300);
+        }
+    });
+
     // SLIDER
     const slides = document.querySelectorAll('.section1-slider .slide');
     let currentIndex = 0;
@@ -93,5 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         topic.style.display = index === 0 ? 'grid' : 'none';
         if(index === 0) topic.classList.add('fade-in');
     });
+
+
 
 });
