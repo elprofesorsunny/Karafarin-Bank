@@ -32,4 +32,5 @@ function loadComponent(elementId, componentName) {
 // Load components
 loadComponent("header", "header");
 loadComponent("main-content", "main-content");
+loadComponent("section2", "section2");
 loadComponent("footer", "footer");
