@@ -10,7 +10,7 @@ const carouselData = [
 ];
 
 // Reference to Carousel and Arrows
-const carousel = document.querySelector(".carousel");
+let carousel = document.querySelector(".carousel");
 const leftArrow = document.querySelector(".arrow.left");
 const rightArrow = document.querySelector(".arrow.right");
 

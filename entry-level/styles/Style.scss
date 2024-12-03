@@ -158,27 +158,29 @@ main {
 
 /* Section Styling */
 .section2 {
-  max-width: 70vw;
+  max-width: 60vw;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 /* Carousel Container */
 .carousel-container {
   display: flex;
   align-items: center;
+  // justify-items: center;
   position: relative;
-  max-width: 70vw;
-  height: 9vw;
+  // height: 11vw;
   margin: auto;
   overflow-x: hidden; /* Hide the horizontal scrollbar */
+  overflow-y: hidden; /* Hide the vertical scrollbar */
 }
 
 /* Carousel */
 .carousel {
   display: flex;            /* Align items in a row */
+  overflow-x: auto;
   gap: 3rem;                /* Space between items */
-  padding: 2rem 0.5rem;     /* Padding around the carousel */
+  padding: 2rem 2rem;     /* Padding around the carousel */
   transition: transform 0.3s ease; /* Smooth scrolling effect */
 }
 
@@ -221,7 +223,7 @@ main {
   cursor: pointer;
   margin: 0 0.5rem;
   position: absolute;
-  top: 50%;
+  top: 32%;
   z-index: 10;
   transition: background-color 0.3s;
 }
