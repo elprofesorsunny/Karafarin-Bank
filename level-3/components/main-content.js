@@ -42,7 +42,7 @@ articles.forEach((article) => {
   const readMoreLink = document.createElement("a");
   readMoreLink.href = article.link;
   readMoreLink.textContent = "ادامه خبر";
-  readMoreLink.classList.add("text-xs", "text-blue-500", "hover:underline", "flex", "pt-4");
+  readMoreLink.classList.add("text-xs", "text-[#007773]", "hover:underline", "flex", "pt-4");
 
   articleElement.appendChild(titleLink);
   articleElement.appendChild(description);
