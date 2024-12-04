@@ -1,0 +1,23 @@
+{
+    "topHeaderLinks": [
+      { "text": "بانکداری شخصی", "href": "#" },
+      { "text": "بانکداری تجاری", "href": "#" },
+      { "text": "بانکداری شرکتی", "href": "#" },
+      { "text": "بانکداری سرمایه‌گذاری", "href": "#" },
+      { "text": "درباره ما", "href": "#" }
+    ],
+    "languageLinks": [
+      { "text": "EN", "href": "#" },
+      { "text": "FA", "href": "#" }
+    ],
+    "bottomHeaderLinks": [
+      { "text": "بانکداری الکترونیکی", "href": "#" },
+      { "text": "خدمات بانکی", "href": "#" },
+      { "text": "خدمات بین‌الملل", "href": "#" }
+    ],
+    "bottomHeaderQuickAccess": {
+      "link": { "text": "دسترسی سریع", "href": "#" },
+      "button": { "text": "های بانک" }
+    }
+  }
+  
