@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "className": "section4-banner1",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 2,
+    "className": "section4-banner2",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 3,
+    "className": "section4-banner3",
+    "image": "https://placehold.co/600x400"
+  },
+  {
+    "id": 4,
+    "className": "section4-banner4",
+    "image": "https://placehold.co/600x400"
+  }
+]
