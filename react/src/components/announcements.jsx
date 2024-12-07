@@ -25,7 +25,7 @@ const Announcements = () => {
           ))}
         </aside>
         <section className="col-span-3 h-[24vw] bg-gray-200 rounded-lg overflow-hidden shadow-md mr-2">
-          <img src="../src/assets/imgs/slider-1.jpg" alt="slider-1" className="h-full w-full object-fill" />
+          <img src="https://placehold.co/750x405" alt="slider-1" className="h-full w-full object-fill" />
         </section>
       </div>
     </main>
