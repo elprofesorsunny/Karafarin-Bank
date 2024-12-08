@@ -1,98 +1,321 @@
 {
   "topHeaderLinks": [
-    { "text": "بانکداری شخصی", "href": "#" },
-    { "text": "بانکداری تجاری", "href": "#" },
-    { "text": "بانکداری شرکتی", "href": "#" },
-    { "text": "بانکداری سرمایه‌گذاری", "href": "#" },
-    { "text": "درباره ما", "href": "#" }
+    {
+      "id": 1,
+      "key": "personal_banking",
+      "text": "بانکداری شخصی",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "key": "commercial_banking",
+      "text": "بانکداری تجاری",
+      "href": "#"
+    },
+    {
+      "id": 3,
+      "key": "corporate_banking",
+      "text": "بانکداری شرکتی",
+      "href": "#"
+    },
+    {
+      "id": 4,
+      "key": "investment_banking",
+      "text": "بانکداری سرمایه‌گذاری",
+      "href": "#"
+    },
+    { "id": 5, "key": "about_us", "text": "درباره ما", "href": "#" }
   ],
   "languageLinks": [
-    { "text": "EN", "href": "#" },
-    { "text": "FA", "href": "#" }
+    { "id": 6, "key": "en", "text": "EN", "href": "#" },
+    { "id": 7, "key": "fa", "text": "FA", "href": "#" }
   ],
   "bottomHeaderLinks": [
     {
+      "id": 8,
+      "key": "electronic_banking",
       "text": "بانکداری الکترونیکی",
       "href": "#",
       "dropdown": [
         {
+          "id": 9,
+          "key": "systems",
           "text": "سامانه ها",
           "href": "#",
+          "parent_key": "electronic_banking",
           "dropdropdown": [
-            { "text": "های بانک", "href": "#" },
-            { "text": "سامانه سجام", "href": "#" },
-            { "text": "کارااکسپرس", "href": "#" },
-            { "text": "سامانه یکپارچه مدیریت اعتبارات", "href": "#" }
+            {
+              "id": 10,
+              "key": "hibank",
+              "text": "های بانک",
+              "href": "#",
+              "parent_key": "systems"
+            },
+            {
+              "id": 11,
+              "key": "sejam",
+              "text": "سامانه سجام",
+              "href": "#",
+              "parent_key": "systems"
+            },
+            {
+              "id": 12,
+              "key": "kara_express",
+              "text": "کارااکسپرس",
+              "href": "#",
+              "parent_key": "systems"
+            },
+            {
+              "id": 13,
+              "key": "credit_management",
+              "text": "سامانه یکپارچه مدیریت اعتبارات",
+              "href": "#",
+              "parent_key": "systems"
+            }
           ]
         },
-        { "text": "دستگاه های خودپرداز", "href": "#" },
-        { "text": "درگاه پرداخت", "href": "#" }
-      ],
-      "dropdown2": [
         {
+          "id": 14,
+          "key": "atms",
+          "text": "دستگاه های خودپرداز",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 15,
+          "key": "payment_gateway",
+          "text": "درگاه پرداخت",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 16,
+          "key": "card_services",
           "text": "خدمات کارت",
           "href": "#",
-          "dropdropdown2": [
-            { "text": "کارت پرداخت" },
-            { "text": "کارت هدیه" },
-            { "text": "کارت مجازی" }
+          "parent_key": "electronic_banking",
+          "dropdropdown": [
+            {
+              "id": 17,
+              "key": "payment_card",
+              "text": "کارت پرداخت",
+              "href": "#",
+              "parent_key": "card_services"
+            },
+            {
+              "id": 18,
+              "key": "gift_card",
+              "text": "کارت هدیه",
+              "href": "#",
+              "parent_key": "card_services"
+            },
+            {
+              "id": 19,
+              "key": "virtual_card",
+              "text": "کارت مجازی",
+              "href": "#",
+              "parent_key": "card_services"
+            }
           ]
         },
-        { "text": "اطلاع رسانی با پیامک", "href": "#" },
-        { "text": "پایانه فروش", "href": "#" }
+        {
+          "id": 20,
+          "key": "sms_services",
+          "text": "اطلاع رسانی با پیامک",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 21,
+          "key": "pos",
+          "text": "پایانه فروش",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        }
       ]
     },
     {
+      "id": 22,
+      "key": "bank_services",
       "text": "خدمات بانکی",
       "href": "#",
       "dropdown": [
         {
+          "id": 23,
+          "key": "facilities",
           "text": "تسهیلات",
           "href": "#",
+          "parent_key": "bank_services",
           "dropdropdown": [
-            { "text": "صبا", "href": "#" },
-            { "text": "ارزش سلامت", "href": "#" },
-            { "text": "تسهیلات قرض الحسنه ازدواج", "href": "#" },
-            { "text": "امیدآفرین", "href": "#" },
-            { "text": "نیک آفرین پلاس", "href": "#" }
+            {
+              "id": 24,
+              "key": "saba",
+              "text": "صبا",
+              "href": "#",
+              "parent_key": "facilities"
+            },
+            {
+              "id": 25,
+              "key": "health_value",
+              "text": "ارزش سلامت",
+              "href": "#",
+              "parent_key": "facilities"
+            },
+            {
+              "id": 26,
+              "key": "wedding_loans",
+              "text": "تسهیلات قرض الحسنه ازدواج",
+              "href": "#",
+              "parent_key": "facilities"
+            },
+            {
+              "id": 27,
+              "key": "hopeful",
+              "text": "امیدآفرین",
+              "href": "#",
+              "parent_key": "facilities"
+            },
+            {
+              "id": 28,
+              "key": "nik_plus",
+              "text": "نیک آفرین پلاس",
+              "href": "#",
+              "parent_key": "facilities"
+            }
           ]
         },
-        { "text": "حواله های بین بانکی", "href": "#" },
-        { "text": "قانون جدید چک", "href": "#" },
-        { "text": "چهارمین دوره جشنواره سپرده قرض الحسنه نیک آفرین", "href": "#" }
-      ],
-      "dropdown2": [
         {
+          "id": 29,
+          "key": "deposit_services",
           "text": "خدمات سپرده",
           "href": "#",
+          "parent_key": "bank_services",
           "dropdropdown2": [
-            { "text": "سپرده ها" },
-            { "text": "محاسبه سود" }
+            {
+              "id": 30,
+              "key": "deposits",
+              "text": "سپرده ها",
+              "href": "#",
+              "parent_key": "deposit_services"
+            },
+            {
+              "id": 31,
+              "key": "profit_calc",
+              "text": "محاسبه سود",
+              "href": "#",
+              "parent_key": "deposit_services"
+            }
           ]
         },
-        { "text": "ضمانتنامه ریالی", "href": "#" },
-        { "text": "استعلام ضمانتنامه", "href": "#" },
-        { "text": "استعلام شبا", "href": "#" },
-        { "text": "صندوف امانات", "href": "#" },
-        { "text": "جشنواره پذیرندگان بانک کارآفرین", "href": "#" },
-        { "text": "پرداخت قبوض", "href": "#" }
+        {
+          "id": 32,
+          "key": "interbank_transfers",
+          "text": "حواله های بین بانکی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 33,
+          "key": "rial_guarantee",
+          "text": "ضمانتنامه ریالی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 34,
+          "key": "new_check_law",
+          "text": "قانون جدید چک",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 35,
+          "key": "new_check_law",
+          "text": "استعلام ضمانتنامه",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 36,
+          "key": "deposit_services",
+          "text": "چهارمین دوره جشنواره سپرده قرض الحسنه نیک آفرین",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 37,
+          "key": "new_check_law",
+          "text": "استعلام شبا",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 38,
+          "key": "new_check_law",
+          "text": "صندوق امانات",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 39,
+          "key": "new_check_law",
+          "text": "جشنواره پذیرندگان بانک کارآفرین",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 40,
+          "key": "new_check_law",
+          "text": "پرداخت قبوض",
+          "href": "#",
+          "parent_key": "bank_services"
+        }
       ]
     },
     {
-      "text": "خدمات بین‌الملل",
+      "id": 41,
+      "key": "bank_services",
+      "text": "خدمات بین الملل",
       "href": "#",
       "dropdown": [
-        { "text": "حواله های ارزی", "href": "#" },
-        { "text": "پرسش های متداول", "href": "#" }
-      ],
-      "dropdown2": [
-        { "text": "خدمات صرافی", "href": "#" },
-        { "text": "سپرده ارزش", "href": "#" }
+        {
+          "id": 42,
+          "key": "facilities",
+          "text": "حواله های ارزی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 43,
+          "key": "interbank_transfers",
+          "text": "پرسش های متداول",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 44,
+          "key": "new_check_law",
+          "text": "خدمات صرافی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 45,
+          "key": "deposit_services",
+          "text": "سپرده ارزش",
+          "href": "#",
+          "parent_key": "bank_services"
+        }
       ]
     }
   ],
   "bottomHeaderQuickAccess": {
-    "link": { "text": "دسترسی سریع", "href": "#" },
-    "button": { "text": "های بانک" }
+    "link": {
+      "id": 46,
+      "key": "quick_access",
+      "text": "دسترسی سریع",
+      "href": "#"
+    },
+    "button": { "id": 47, "key": "hibank_button", "text": "های بانک" }
   }
 }
