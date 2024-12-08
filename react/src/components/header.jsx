@@ -34,7 +34,6 @@ const Header = () => {
             >
               {dropdownItem.text}
             </a>
-            {dropdownItem.dropdown && renderDropdown(dropdownItem.dropdown)}
           </div>
         ))}
       </div>
