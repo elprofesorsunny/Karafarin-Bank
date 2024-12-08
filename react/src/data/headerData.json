@@ -42,37 +42,35 @@
           "key": "systems",
           "text": "سامانه ها",
           "href": "#",
-          "parent_key": "electronic_banking",
-          "dropdropdown": [
-            {
-              "id": 10,
-              "key": "hibank",
-              "text": "های بانک",
-              "href": "#",
-              "parent_key": "systems"
-            },
-            {
-              "id": 11,
-              "key": "sejam",
-              "text": "سامانه سجام",
-              "href": "#",
-              "parent_key": "systems"
-            },
-            {
-              "id": 12,
-              "key": "kara_express",
-              "text": "کارااکسپرس",
-              "href": "#",
-              "parent_key": "systems"
-            },
-            {
-              "id": 13,
-              "key": "credit_management",
-              "text": "سامانه یکپارچه مدیریت اعتبارات",
-              "href": "#",
-              "parent_key": "systems"
-            }
-          ]
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 10,
+          "key": "hibank",
+          "text": "های بانک",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 11,
+          "key": "sejam",
+          "text": "سامانه سجام",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 12,
+          "key": "kara_express",
+          "text": "کارااکسپرس",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 13,
+          "key": "credit_management",
+          "text": "سامانه یکپارچه مدیریت اعتبارات",
+          "href": "#",
+          "parent_key": "systems"
         },
         {
           "id": 14,
@@ -93,30 +91,28 @@
           "key": "card_services",
           "text": "خدمات کارت",
           "href": "#",
-          "parent_key": "electronic_banking",
-          "dropdropdown": [
-            {
-              "id": 17,
-              "key": "payment_card",
-              "text": "کارت پرداخت",
-              "href": "#",
-              "parent_key": "card_services"
-            },
-            {
-              "id": 18,
-              "key": "gift_card",
-              "text": "کارت هدیه",
-              "href": "#",
-              "parent_key": "card_services"
-            },
-            {
-              "id": 19,
-              "key": "virtual_card",
-              "text": "کارت مجازی",
-              "href": "#",
-              "parent_key": "card_services"
-            }
-          ]
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 17,
+          "key": "payment_card",
+          "text": "کارت پرداخت",
+          "href": "#",
+          "parent_key": "card_services"
+        },
+        {
+          "id": 18,
+          "key": "gift_card",
+          "text": "کارت هدیه",
+          "href": "#",
+          "parent_key": "card_services"
+        },
+        {
+          "id": 19,
+          "key": "virtual_card",
+          "text": "کارت مجازی",
+          "href": "#",
+          "parent_key": "card_services"
         },
         {
           "id": 20,
@@ -145,67 +141,63 @@
           "key": "facilities",
           "text": "تسهیلات",
           "href": "#",
-          "parent_key": "bank_services",
-          "dropdropdown": [
-            {
-              "id": 24,
-              "key": "saba",
-              "text": "صبا",
-              "href": "#",
-              "parent_key": "facilities"
-            },
-            {
-              "id": 25,
-              "key": "health_value",
-              "text": "ارزش سلامت",
-              "href": "#",
-              "parent_key": "facilities"
-            },
-            {
-              "id": 26,
-              "key": "wedding_loans",
-              "text": "تسهیلات قرض الحسنه ازدواج",
-              "href": "#",
-              "parent_key": "facilities"
-            },
-            {
-              "id": 27,
-              "key": "hopeful",
-              "text": "امیدآفرین",
-              "href": "#",
-              "parent_key": "facilities"
-            },
-            {
-              "id": 28,
-              "key": "nik_plus",
-              "text": "نیک آفرین پلاس",
-              "href": "#",
-              "parent_key": "facilities"
-            }
-          ]
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 24,
+          "key": "saba",
+          "text": "صبا",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 25,
+          "key": "health_value",
+          "text": "ارزش سلامت",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 26,
+          "key": "wedding_loans",
+          "text": "تسهیلات قرض الحسنه ازدواج",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 27,
+          "key": "hopeful",
+          "text": "امیدآفرین",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 28,
+          "key": "nik_plus",
+          "text": "نیک آفرین پلاس",
+          "href": "#",
+          "parent_key": "facilities"
         },
         {
           "id": 29,
           "key": "deposit_services",
           "text": "خدمات سپرده",
           "href": "#",
-          "parent_key": "bank_services",
-          "dropdropdown2": [
-            {
-              "id": 30,
-              "key": "deposits",
-              "text": "سپرده ها",
-              "href": "#",
-              "parent_key": "deposit_services"
-            },
-            {
-              "id": 31,
-              "key": "profit_calc",
-              "text": "محاسبه سود",
-              "href": "#",
-              "parent_key": "deposit_services"
-            }
-          ]
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 30,
+          "key": "deposits",
+          "text": "سپرده ها",
+          "href": "#",
+          "parent_key": "deposit_services"
+        },
+        {
+          "id": 31,
+          "key": "profit_calc",
+          "text": "محاسبه سود",
+          "href": "#",
+          "parent_key": "deposit_services"
         },
         {
           "id": 32,
@@ -230,42 +222,42 @@
         },
         {
           "id": 35,
-          "key": "new_check_law",
+          "key": "guarantee_inquiry",
           "text": "استعلام ضمانتنامه",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 36,
-          "key": "deposit_services",
+          "key": "fourth_festival_savings",
           "text": "چهارمین دوره جشنواره سپرده قرض الحسنه نیک آفرین",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 37,
-          "key": "new_check_law",
+          "key": "sheba_inquiry",
           "text": "استعلام شبا",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 38,
-          "key": "new_check_law",
+          "key": "safe_deposit_box",
           "text": "صندوق امانات",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 39,
-          "key": "new_check_law",
+          "key": "entrepreneur_festival",
           "text": "جشنواره پذیرندگان بانک کارآفرین",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 40,
-          "key": "new_check_law",
+          "key": "bill_payment",
           "text": "پرداخت قبوض",
           "href": "#",
           "parent_key": "bank_services"
@@ -280,28 +272,28 @@
       "dropdown": [
         {
           "id": 42,
-          "key": "facilities",
+          "key": "foreign_remittance",
           "text": "حواله های ارزی",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 43,
-          "key": "interbank_transfers",
+          "key": "frequent_questions",
           "text": "پرسش های متداول",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 44,
-          "key": "new_check_law",
+          "key": "exchange_services",
           "text": "خدمات صرافی",
           "href": "#",
           "parent_key": "bank_services"
         },
         {
           "id": 45,
-          "key": "deposit_services",
+          "key": "value_deposit",
           "text": "سپرده ارزش",
           "href": "#",
           "parent_key": "bank_services"
