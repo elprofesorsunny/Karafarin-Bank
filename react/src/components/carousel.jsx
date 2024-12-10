@@ -1,12 +1,14 @@
+// src/components/carousel.jsx
 import React, { useState } from "react";
 import carouselData from "../data/carouselData.json";
+import CarouselItem from "./carouselItem";
 
 const Carousel = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const scrollAmount = 220;
 
-  const carouselWidth = carouselData.length * 220; // عرض کل همه آیتم‌ها (با در نظر گرفتن عرض هر آیتم)
-  const containerWidth = window.innerWidth * 0.6; // عرض container (60% از عرض صفحه)
+  const carouselWidth = carouselData.length * 220;
+  const containerWidth = window.innerWidth * 0.6;
 
   const handleLeftArrowClick = () => {
     if (scrollPosition > 0) {
@@ -35,15 +37,7 @@ const Carousel = () => {
             style={{ transform: `translateX(${scrollPosition}px)` }}
           >
             {carouselData.map((item, index) => (
-              <article
-                key={index}
-                className="carousel-item flex flex-col items-center gap-8 min-w-[10rem] flex-shrink-0"
-              >
-                <div className="diamond w-24 h-24 bg-[#fcfaf3] rotate-45 rounded-lg shadow-lg transition-all duration-300"></div>
-                <p className="carousel-item-text text-center transition-all duration-300">
-                  {item.text}
-                </p>
-              </article>
+              <CarouselItem key={index} text={item.text} />
             ))}
           </div>
           <button
