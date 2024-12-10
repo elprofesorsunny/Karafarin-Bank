@@ -25,7 +25,10 @@ const Header = () => {
     if (!items || items.length === 0) return null;
 
     return (
-      <div className="absolute bg-white shadow-md mt-2 w-[600px] border rounded-lg grid grid-cols-2 gap-3 p-4">
+      <div
+        className="absolute bg-white shadow-md mt-2 w-[600px] border rounded-lg grid grid-cols-2 gap-3 p-4"
+        style={{ gridAutoFlow: "row" }}
+      >
         {items.map((dropdownItem) => (
           <div key={dropdownItem.id} className="flex flex-col">
             <a
