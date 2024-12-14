@@ -1,0 +1,19 @@
+{
+  "items1": [
+    { "width": "30px", "height": "30px" },
+    { "width": "30px", "height": "30px" },
+    { "width": "30px", "height": "30px" },
+    { "width": "30px", "height": "30px" },
+    { "width": "30px", "height": "30px" }
+  ],
+  "items2": [
+    {
+      "platform": "iOS",
+      "bank": "HiBank"
+    },
+    {
+      "platform": "Android",
+      "bank": "HiBank"
+    }
+  ]
+}
