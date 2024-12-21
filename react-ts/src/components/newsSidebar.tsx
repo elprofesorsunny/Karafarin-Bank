@@ -4,29 +4,6 @@ import sidebarData from "../data/sidebarData.json";
 import SubjectsSection from "./subjectSection";
 import ItemsSection from "./itemSection";
 
-interface NewsItem {
-  image: string;
-  title: string;
-  description: string;
-  date: string;
-  time: string;
-  link: string;
-}
-
-interface SidebarItem {
-  title: string;
-  description: string;
-  link: string;
-}
-
-interface SubjectsSectionProps {
-  newsData: NewsItem[];
-}
-
-interface ItemsSectionProps {
-  sidebarData: SidebarItem[];
-}
-
 const NewsAndSidebar: React.FC = () => {
   return (
     <div className="section3 max-w-[60vw] mx-auto py-6">
