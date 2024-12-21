@@ -1,21 +1,6 @@
 import React from "react";
 import sectionData from "../data/postFooter.json";
 
-interface Item1 {
-  width: string;
-  height: string;
-}
-
-interface Item2 {
-  platform: string;
-  bank: string;
-}
-
-interface SectionData {
-  items1: Item1[];
-  items2: Item2[];
-}
-
 const PostFooterSection: React.FC = () => {
   return (
     <div className="bg-[#FCFAF3] py-4">
