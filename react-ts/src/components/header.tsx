@@ -6,6 +6,7 @@ interface Link {
   text: string;
   dropdown?: DropdownItem[];
   dropdown2?: DropdownItem[];
+  parent_key?: string;
 }
 
 interface DropdownItem {
@@ -26,12 +27,15 @@ interface HeaderData {
   };
 }
 
-interface HeaderProps {
-  headerData: HeaderData;
-}
-
-const Header: React.FC<HeaderProps> = ({ headerData }) => {
+const Header: React.FC = () => {
+  const [headerData, setHeaderData] = useState<HeaderData | null>(null);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("/data/headerData.json")
+      .then((response) => response.json())
+      .then((data) => setHeaderData(data));
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -73,6 +77,18 @@ const Header: React.FC<HeaderProps> = ({ headerData }) => {
     );
   };
 
+  const getLinkClassName = (parent_key?: string) => {
+    console.log("parent_key received:", parent_key);
+    if (parent_key) {
+      return "text-green-500 hover:underline transition-colors duration-300"; // Green font for specific parents
+    }
+    return "text-black hover:underline transition-colors duration-300"; // Default black font
+  };
+
+  if (!headerData) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <header className="sticky top-0 z-50 flex flex-col">
       {/* Top Header */}
@@ -83,7 +99,7 @@ const Header: React.FC<HeaderProps> = ({ headerData }) => {
               <a
                 key={link.id}
                 href={link.href}
-                className="hover:underline transition-colors duration-300"
+                className={getLinkClassName(link.parent_key)}
               >
                 {link.text}
               </a>
@@ -94,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ headerData }) => {
               <a
                 key={lang.id}
                 href={lang.href}
-                className="hover:underline transition-colors duration-300"
+                className="text-black hover:underline transition-colors duration-300"
               >
                 {lang.text}
               </a>
@@ -125,7 +141,7 @@ const Header: React.FC<HeaderProps> = ({ headerData }) => {
                 >
                   <a
                     href={link.href}
-                    className="hover:underline transition-colors duration-300"
+                    className={getLinkClassName(link.parent_key)}
                   >
                     {link.text}
                   </a>
@@ -141,7 +157,7 @@ const Header: React.FC<HeaderProps> = ({ headerData }) => {
             <div className="flex flex-col items-center space-y-4">
               <a
                 href={headerData.bottomHeaderQuickAccess.link.href}
-                className="hover:underline transition-colors duration-300"
+                className="text-black hover:underline transition-colors duration-300"
               >
                 {headerData.bottomHeaderQuickAccess.link.text}
               </a>
