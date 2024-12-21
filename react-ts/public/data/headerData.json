@@ -1,0 +1,321 @@
+{
+  "topHeaderLinks": [
+    {
+      "id": 1,
+      "key": "personal_banking",
+      "text": "بانکداری شخصی",
+      "href": "#",
+      "parent_key": null
+    },
+    {
+      "id": 2,
+      "key": "commercial_banking",
+      "text": "بانکداری تجاری",
+      "href": "#",
+      "parent_key": null
+    },
+    {
+      "id": 3,
+      "key": "corporate_banking",
+      "text": "بانکداری شرکتی",
+      "href": "#",
+      "parent_key": null
+    },
+    {
+      "id": 4,
+      "key": "investment_banking",
+      "text": "بانکداری سرمایه‌گذاری",
+      "href": "#",
+      "parent_key": null
+    },
+    { "id": 5, "key": "about_us", "text": "درباره ما", "href": "#", "parent_key": null }
+  ],
+  "languageLinks": [
+    { "id": 6, "key": "en", "text": "EN", "href": "#", "parent_key": null },
+    { "id": 7, "key": "fa", "text": "FA", "href": "#", "parent_key": null }
+  ],
+  "bottomHeaderLinks": [
+    {
+      "id": 8,
+      "key": "electronic_banking",
+      "text": "بانکداری الکترونیکی",
+      "href": "#",
+      "parent_key": null,
+      "dropdown": [
+        {
+          "id": 9,
+          "key": "systems",
+          "text": "سامانه ها",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 16,
+          "key": "card_services",
+          "text": "خدمات کارت",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 10,
+          "key": "hibank",
+          "text": "های بانک",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 17,
+          "key": "payment_card",
+          "text": "کارت پرداخت",
+          "href": "#",
+          "parent_key": "card_services"
+        },
+        {
+          "id": 11,
+          "key": "sejam",
+          "text": "سامانه سجام",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 18,
+          "key": "gift_card",
+          "text": "کارت هدیه",
+          "href": "#",
+          "parent_key": "card_services"
+        },
+        {
+          "id": 12,
+          "key": "kara_express",
+          "text": "کارااکسپرس",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 19,
+          "key": "virtual_card",
+          "text": "کارت مجازی",
+          "href": "#",
+          "parent_key": "card_services"
+        },
+        {
+          "id": 13,
+          "key": "credit_management",
+          "text": "سامانه یکپارچه مدیریت اعتبارات",
+          "href": "#",
+          "parent_key": "systems"
+        },
+        {
+          "id": 20,
+          "key": "sms_services",
+          "text": "اطلاع رسانی با پیامک",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 14,
+          "key": "atms",
+          "text": "دستگاه های خودپرداز",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 21,
+          "key": "pos",
+          "text": "پایانه فروش",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        },
+        {
+          "id": 15,
+          "key": "payment_gateway",
+          "text": "درگاه پرداخت",
+          "href": "#",
+          "parent_key": "electronic_banking"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "key": "bank_services",
+      "text": "خدمات بانکی",
+      "href": "#",
+      "parent_key": null,
+      "dropdown": [
+        {
+          "id": 23,
+          "key": "facilities",
+          "text": "تسهیلات",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 29,
+          "key": "deposit_services",
+          "text": "خدمات سپرده",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 24,
+          "key": "saba",
+          "text": "صبا",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 30,
+          "key": "deposits",
+          "text": "سپرده ها",
+          "href": "#",
+          "parent_key": "deposit_services"
+        },
+        {
+          "id": 25,
+          "key": "health_value",
+          "text": "ارزش سلامت",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 31,
+          "key": "profit_calc",
+          "text": "محاسبه سود",
+          "href": "#",
+          "parent_key": "deposit_services"
+        },
+        {
+          "id": 26,
+          "key": "wedding_loans",
+          "text": "تسهیلات قرض الحسنه ازدواج",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 33,
+          "key": "rial_guarantee",
+          "text": "ضمانتنامه ریالی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 27,
+          "key": "hopeful",
+          "text": "امیدآفرین",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 35,
+          "key": "guarantee_inquiry",
+          "text": "استعلام ضمانتنامه",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 28,
+          "key": "nik_plus",
+          "text": "نیک آفرین پلاس",
+          "href": "#",
+          "parent_key": "facilities"
+        },
+        {
+          "id": 37,
+          "key": "sheba_inquiry",
+          "text": "استعلام شبا",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 32,
+          "key": "interbank_transfers",
+          "text": "حواله های بین بانکی",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 38,
+          "key": "safe_deposit_box",
+          "text": "صندوق امانات",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 34,
+          "key": "new_check_law",
+          "text": "قانون جدید چک",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 39,
+          "key": "entrepreneur_festival",
+          "text": "جشنواره پذیرندگان بانک کارآفرین",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 36,
+          "key": "fourth_festival_savings",
+          "text": "چهارمین دوره جشنواره سپرده قرض الحسنه نیک آفرین",
+          "href": "#",
+          "parent_key": "bank_services"
+        },
+        {
+          "id": 40,
+          "key": "bill_payment",
+          "text": "پرداخت قبوض",
+          "href": "#",
+          "parent_key": "bank_services"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "key": "international_services",
+      "text": "خدمات بین الملل",
+      "href": "#",
+      "parent_key": null,
+      "dropdown": [
+        {
+          "id": 42,
+          "key": "foreign_remittance",
+          "text": "حواله های ارزی",
+          "href": "#",
+          "parent_key": "international_services"
+        },
+        {
+          "id": 44,
+          "key": "exchange_services",
+          "text": "خدمات صرافی",
+          "href": "#",
+          "parent_key": "international_services"
+        },
+        {
+          "id": 43,
+          "key": "frequent_questions",
+          "text": "پرسش های متداول",
+          "href": "#",
+          "parent_key": "international_services"
+        },
+        {
+          "id": 45,
+          "key": "value_deposit",
+          "text": "سپرده ارزش",
+          "href": "#",
+          "parent_key": "international_services"
+        }
+      ]
+    }
+  ],
+  "bottomHeaderQuickAccess": {
+    "link": {
+      "id": 46,
+      "key": "quick_access",
+      "text": "دسترسی سریع",
+      "href": "#",
+      "parent_key": null
+    },
+    "button": { "id": 47, "key": "hibank_button", "text": "های بانک", "parent_key": null }
+  }
+}
